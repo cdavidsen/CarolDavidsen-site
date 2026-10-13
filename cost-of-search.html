@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Cost of Search: An Old Economics Problem at the Center of AI Strategy</title>
+<meta name="description" content="Why the 1961 economics of search cost explains AI strategy's biggest open questions: trust, billing, and personalized pricing.">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="site-name" href="/">Cost of Search</a>
+    <a class="site-tagline" href="/#about">Carol Davidsen</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <article>
+      <p class="essay-meta">Essay</p>
+      <h1 class="essay-title">The Cost of Search: An Old Economics Problem at the Center of AI Strategy</h1>
+      <p class="byline">By Carol Davidsen · October 9, 2026</p>
+
+      <h2 class="section">A problem economists named before computers made it worse</h2>
+      <p>In 1961, the economist George Stigler published a short paper called "The Economics of Information." His argument was simple and, at the time, slightly heretical. Classical economics assumes markets clear at a single price because buyers and sellers share the same information. Stigler pointed out that in real markets, nobody has complete information about anything. Prices for the same good vary widely across sellers, and finding the best price costs something: time, effort, money. He called this the cost of search, and he showed that a rational buyer keeps searching only until the expected savings from one more search equal the cost of making it.</p>
+
+      <p>Sixty-five years later, this idea is more relevant than it was in 1961, not less. We generate more data than at any point in history, and somehow it has gotten harder, not easier, to know what anything actually costs, what anything is actually worth, or whether the answer we were just given can be trusted. That is no longer a problem for economists to debate in the abstract. It is the problem sitting underneath most AI strategy decisions being made right now, whether or not anyone has named it.</p>
+
+      <p>Stigler's model assumed one price per seller. The buyer's job was to find the seller charging the least for it. That assumption is breaking down. Airlines, hotels, and now even fast-food chains are testing prices that vary not just by seller, but by buyer. Delta has confirmed it uses AI, built with a vendor called Fetcherr, to set a growing share of its domestic fares based on a specific customer's booking intent and inferred willingness to pay. The practice drew a formal letter of inquiry from a group of Senate Democrats in July 2025. Wendy's floated AI-enabled dynamic pricing in 2024, then publicly disavowed anything resembling surge pricing after backlash, before the technology had even launched. McDonald's has been reported to use transaction data from roughly 14,000 US locations to recommend prices by location, and critics say by customer; McDonald's disputes that it prices dynamically or in real time. The FTC has an open inquiry into what it calls surveillance pricing, the use of a person's own data to set a price built around what that person specifically will pay, not what the market will bear. When the price is a function of who is asking, no amount of searching gets a buyer to a stable answer. That is not a hypothetical. It is one more reason Stigler's economics is more relevant now than when he wrote it, not less.</p>
+
+      <h2 class="section">Data was never a fact. AI just made that harder to ignore.</h2>
+      <p>Part of why this problem keeps recurring is that we have gotten sloppy about what the word data actually means. The word dates back to the 1640s, when it simply meant a fact given or granted. It does not mean that anymore. What we call data today is rarely a fact handed to us cleanly. It is a reconstruction, assembled from fragments scattered across systems that were never designed to talk to each other, reconciled through a process data engineers call ETL, extract, transform, load, and then governed through an ongoing effort to flag what is wrong, correct what can be corrected, and quietly set aside what cannot. Even a question as simple as a person's current address requires stitching together records from systems that disagree with each other. Multiply that by every fact a company needs to run itself, and it becomes clear why data engineering exists at all. Not because information is hard to store, but because there is no single, authoritative place where all of it already lives.</p>
+
+      <p>Until recently, there was one more wrinkle. A huge share of the world's information, videos, contracts, slide decks, recorded calls, was never stored in rows and columns at all. We called this unstructured data, which was always a slightly dishonest name. Language has enormous structure. A contract has clauses. A recorded sales call has a pitch and a set of objections. The information was never actually unstructured. It was structured in a way nothing but a human being could parse, which meant extracting anything useful from it required a person to watch it, read it, or listen to it, and manually write down what mattered.</p>
+
+      <p>What changed in 2022 is that large language models became good enough to do that extraction without a person in the loop. That is the real shift, more than any single flashy capability. The cost of search on a huge share of the world's accumulated information collapsed, almost overnight, in much the same way matching two datasets collapsed the cost of search on television advertising prices a decade earlier.</p>
+
+      <h2 class="section">Collapsing the cost of search does not eliminate the problem. It relocates it.</h2>
+      <p>Here is where most conversations about AI strategy go wrong. They treat the arrival of a technology that can parse almost anything as the end of the cost-of-search problem, when it is really the beginning of a new one, in three specific places.</p>
+
+      <p>The first is trust. If data was never a clean fact to begin with, and a language model is now synthesizing an answer from dozens of underlying, imperfect sources at a speed no human could replicate, the old question, is this source trustworthy, does not go away. It gets harder to answer, because nobody can watch the model do the work the way an analyst used to watch a spreadsheet. This is exactly why regulators and auditors are increasingly asking not just what an AI system answered, but what it was trained on, what it searched, and whether that underlying information can be reconstructed and defended after the fact. That is a governance instinct with a long history. It is the same instinct that built ratings guarantees into television ad contracts, aimed now at a much larger and far less visible target.</p>
+
+      <p>The second is billing, and it has a precedent that rhymes almost exactly. Telephone bills, well into the 2000s, itemized every single call, because the infrastructure delivering the service was built to count usage precisely. As subscription models took over, usage-based billing fell out of fashion, not because usage stopped mattering, but because it was easier to charge a flat fee than to keep proving what each customer actually used. I have advised organizations trying to make that transition in reverse, moving from flat-fee data licensing to usage-based pricing that charges for the value actually delivered. In nearly every case, the hard part was not designing the pricing model. It was that nobody had built the telemetry to prove usage in the first place. The data existed in theory. Nobody had done the work to turn raw logs into something you could put in front of a customer, or a regulator, and defend.</p>
+
+      <p>AI is about to hit this same wall, at a much larger scale. Every enterprise negotiating how to bill for AI-driven search, decisioning, or agent activity is going to discover what usage-based data vendors discovered years earlier. The pricing model is the easy part. The infrastructure to measure what was actually searched, used, and acted on is the part nobody built.</p>
+
+      <p>The third is access, and it is the one most enterprises are getting wrong right now. Ask a sales or marketing operations leader whether a tool outside the CRM can use the account and opportunity data sitting inside it, and the answer is usually no. Not because the data is especially sensitive, but because that leader does not actually own the data in any sense that feels safe to act on. What they own is a dashboard showing how many people logged into the application this month. The data itself belongs to the business. The application is a SaaS vendor's interface to it, rented by the seat. Treating the two as the same thing is the mistake, and it is an expensive one.</p>
+
+      <p>The mistake persists because of how these leaders are measured. Their dashboards count logins, adoption, and feature usage inside the application. Almost none of them count how the underlying data is used once it leaves that application, through an API, a warehouse, or now an AI agent. An organization that cannot see the second number will always protect the first one. It restricts what it cannot measure and calls the restriction governance, when what it is actually protecting is a usage metric that was never the point. The application was supposed to be a container for the data. In company after company, the container became the product, and the thing it was built to hold became an afterthought.</p>
+
+      <p>Real governance does the opposite of locking data inside an application. It answers, for any given record, who is allowed to see it, how it was matched and enriched, and what changed and when, so that letting an AI system or a colleague in another department use that data becomes a decision made on evidence rather than fear. That is what makes it possible to put a number on Stigler's original question inside a company: what does it cost, in time, risk, and review, to get one more verified answer out of the data already on hand, and is that answer worth the search. An organization that has never built that audit trail cannot answer the question. It can only say no by default, which is its own search cost, paid in decisions the data could have supported and never did.</p>
+
+      <p>I have watched this dynamic most clearly from inside one unlikely industry, in a market that ran on exactly this kind of asymmetric information for decades before anyone fixed it.</p>
+
+      <h2 class="section">You can Google the price of Microsoft stock. You cannot Google the price of a commercial on BRAVO.</h2>
+      <p>That sentence is not a rhetorical flourish. It is a literal, operational fact about the advertising industry, and I spent years working inside it. There is no public exchange for television advertising. Prices for the same thirty-second spot vary by network, by time of day, by who is buying, and by what relationship the buyer already has with the seller. Rate cards exist, but they are not published, they are not standardized, and the advertiser almost never knows whether the price they are quoted reflects the actual value of the audience they are buying, or simply what the seller thinks they can get away with charging.</p>
+
+      <p>This is a version of the lemons problem the economist George Akerlof described in 1970, the paper that explained why markets for used cars, and by extension any market where sellers know more about quality than buyers do, tend to degrade toward low trust and low prices unless someone finds a credible way to signal real quality. Television networks try to solve this with ratings guarantees and make-good airings when they fall short. Advertisers try to solve it by relying on agencies who have spent decades learning which sellers to trust. Neither solution closes the information gap. Both just price around it.</p>
+
+      <p>In 2012, I was the Director of Data Integration and Media Targeting for the Obama campaign's reelection effort. We had two datasets that, separately, were only moderately useful. One was viewership data from set-top boxes, tracking how tens of millions of households actually watched television, hour by hour, broken down by age, income, and gender. The campaign layered its own custom audiences on top of that: persuadable voters and low-turnout Democrats, categories no rate card had ever priced. The other dataset was rate card data, the actual prices networks were charging for advertising slots, built up through years of agency relationships and priced entirely against those same generic demographic buckets. Neither dataset told you much alone. Matched together, hour by hour and network by network, they exposed the arbitrage. A slot priced for its reach among, say, women 18 to 49 could be badly mispriced for the persuadable and low-turnout voters we actually needed to reach. The rate card had no way of knowing which direction that mispricing ran. The extra search we did was not matching data for its own sake. It was hunting, slot by slot, for the gap between what the market was pricing and what our specific audience was actually worth.</p>
+
+      <p>We used that matched dataset to buy television advertising differently than campaigns before us had. Instead of assuming prime time on broadcast networks was the only way to reach persuadable voters, we found that cable networks running outside prime time were, for our specific target audience, dramatically more cost-efficient, even though they looked unremarkable by the metrics everyone else was using. The result, by our advertising agency's own accounting, was a $40 to $80 million efficiency gain on a roughly $500 million television budget. That is not a modeling exercise. That is real money, saved by closing a search-cost gap nobody else had bothered to close, because nobody else had bothered to match the two datasets in the first place.</p>
+
+      <h2 class="section">The pattern repeats wherever information is expensive to find and easy to misrepresent</h2>
+      <p>I want to be precise about what actually happened there, because the lesson generalizes far beyond television. The advertising market had three ingredients that made the cost of search unusually high: prices were dispersed rather than uniform, quality was genuinely hard to verify before you bought, and almost nobody had invested in the data infrastructure needed to see through either problem. Whoever did invest in that infrastructure got an advantage that had nothing to do with creative talent or budget size. It had everything to do with knowing something true that everyone else had to guess at.</p>
+
+      <p>That is not only a story about television. It is a story about every market where information is asymmetric and expensive to acquire, including the one every business is now trying to navigate: the market for AI-generated answers.</p>
+
+      <h2 class="section">All three problems are the same problem</h2>
+      <p>Regulators asking whether an AI's underlying data can be trusted, vendors trying to bill customers for how much value an AI actually delivered, and operations leaders deciding who else gets to use the data sitting inside their own systems are asking the same question from three directions. All of them are really asking what the system searched, how reliable what it found was, what finding it actually cost, and what it was used for once it was found. That last question is the one that finally lets an organization credit the people who kept a dataset accurate for the decision it made possible, and attach a real cost to the decision that went wrong when nobody did. That is the question Stigler asked about markets in 1961. It is the question I spent years answering about television advertising rates, and have asked again in every RFP, license fee negotiation, and data partnership contract since. It is now the central, mostly unaddressed question of enterprise AI strategy.</p>
+
+      <p>The organizations that come out ahead in the next phase of AI will not be the ones with access to the best model. Models are converging, and will keep converging. The advantage will belong to the organizations that already know what their data is worth, where it actually came from, what it costs to find, verify, and act on it, and when the honest answer is to stop searching and act instead of looking for one more confirmation.</p>
+
+      <p>I learned the real version of this in a conference room in 2012, making the case for a media buy that broke with how the agency had always bought television. The dataset was not what moved that room. What moved it was being able to explain, step by step, how the recommendation was built: which inputs mattered, what it would have cost to check one more market before deciding, and why we were confident enough to stop checking and spend the money. An unexplainable answer, however accurate, would have stayed a hunch.</p>
+
+      <p>AI agents are about to be judged the same way. A model that can show what it searched, what continuing to search would have cost, and why it stopped there is a model a regulator or a finance team can actually approve. The advantage over the next few years will not belong to whoever has the smartest model. It will belong to whoever can answer fastest how a decision was made, what governing the data behind it costs, and what that governance returns. That is also where the credit finally lands correctly: with the people who kept the data right, not with the applications that collected it and have spent years trying to keep its usage to themselves.</p>
+
+      <a class="back-link" href="/">&larr; All essays</a>
+    </article>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    &copy; 2026 Carol Davidsen
+  </div>
+</footer>
+</body>
+</html>
